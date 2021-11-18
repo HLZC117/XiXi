@@ -4,11 +4,7 @@
 }
 
 body {
-    background-image: url(../img/wallhaven.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-attachment: fixed
+    background-color: rgba(206, 224, 43, 0.26);
 }
 .box{
     width: 1300px;
