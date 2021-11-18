@@ -9,16 +9,6 @@
         
         <div id = "app" class="box">
 
-
-            <template v-for="(item,index) in flower">
-                <!-- <i class = "imgBorder" style="position: relative;"> -->
-                    <img class="photo" v-on:click="preView_f(index,$event)" :src="item"></img>
-                <!-- </i> -->
-                
-            </template>
-
-            
-        
             <template v-for="(item,index) in srcList">
                 <!-- <i class = "imgBorder" style="position: relative;"> -->
                     <img class="photo" v-on:click="preView(index,$event)" :src="item"></img>
@@ -38,7 +28,7 @@
                     'img/0.jpg',
                     ],
                     srcList: [
-                    
+                      'img/0.jpg',
                       'img/1.jpg',
                       'img/2.jpg',
                       'img/3.jpg',
@@ -68,21 +58,7 @@
                         // var ziv = new ZxImageViewer({},this.srcList);
                         // ziv.view(index);
                     },
-                    
-
-                    preView_f : function (index,event){
-
-                        if(this.current && this.current == this.imgNodes[index] 
-                        && this.current.getAttribute('class')  === 'fphoto'){
-                            this.current.setAttribute('class','photo');
-                            return;
-                        }
-                        this.current = this.imgNodes[index];
-                        this.current.setAttribute('class','fphoto');
-                        alert(13)
-                        // var ziv = new ZxImageViewer({},this.srcList);
-                        // ziv.view(index);
-                    }
+                
 
 
                 },
