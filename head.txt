@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>XIXI</title>
+        <link rel="stylesheet" type="text/css" href="css/PhotoWall.css" />
+    </head>
+    <body>
+        
+        <div id = "app" class="box">
+
+            <template v-for="(item,index) in srcList">
+                <!-- <i class = "imgBorder" style="position: relative;"> -->
+                    <img class="photo" v-on:click="preView(index,$event)" :src="item">
+                <!-- </i> -->
+                
+            </template>
+        </div>
+        
+        <script src="lib/vue.min.js"></script>
+        <script src="lib/zx-image-viewer.min.js"></script>
+        <script type="text/javascript">
+        
+            var app = new Vue({
+                el:'#app',
+                data:{
+                    srcList: [

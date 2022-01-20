@@ -11,7 +11,7 @@
 
             <template v-for="(item,index) in srcList">
                 <!-- <i class = "imgBorder" style="position: relative;"> -->
-                    <img class="photo" v-on:click="preView(index,$event)" :src="item"></img>
+                    <img class="photo" v-on:click="preView(index,$event)" :src="item">
                 <!-- </i> -->
                 
             </template>
@@ -24,24 +24,29 @@
             var app = new Vue({
                 el:'#app',
                 data:{
-                    flower:[
-                    'img/0.jpg',
-                    ],
                     srcList: [
-                      'img/0.jpg',
-                      'img/1.jpg',
-                      'img/2.jpg',
-                      'img/3.jpg',
-                      'img/4.jpg',
-                      'img/5.jpg',
-                      'img/6.jpg',
-                      'img/7.jpg',
-                      'img/8.jpg',
-                      'img/9.jpg',
-                      'img/10.jpg',
-                      'img/11.jpg',
-                      'img/12.jpg',
-                      'img/13.jpg',
+                    'img/0.jpg',
+                    'img/1.jpg',
+                    'img/10.jpg',
+                    'img/11.jpg',
+                    'img/12.jpg',
+                    'img/13.jpg',
+                    'img/2.jpg',
+                    'img/3.jpg',
+                    'img/4.jpg',
+                    'img/5.jpg',
+                    'img/6.jpg',
+                    'img/7.jpg',
+                    'img/8.jpg',
+                    'img/9.jpg',
+                    'img/微信图片_20220120162028.jpg',
+                    'img/微信图片_20220120162037.jpg',
+                    'img/微信图片_20220120162043.jpg',
+                    'img/微信图片_20220120162045.jpg',
+                    'img/微信图片_20220120162047.jpg',
+                    'img/微信图片_20220120162050.jpg',
+                    'img/微信图片_20220120162053.jpg',
+
                     ],
                     imgNodes : [],
                     current:null
